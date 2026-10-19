@@ -1,0 +1,10 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs & temp files
+*.log
+.system_generated/
+scratch/
+node_modules/

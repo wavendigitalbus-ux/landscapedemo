@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | GreenScape Lawn & Landscape — Lakeland, FL</title>
+  <meta name="description" content="Explore residential lawn care and landscaping services in Lakeland, FL: lawn mowing, landscape design, sod installation, yard cleanup, hedge trimming, and property maintenance.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="top-bar-indicator">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Serving Lakeland &amp; Nearby Communities
+        </span>
+      </div>
+      <div class="top-bar-right">
+        <span>Reliable Lawn Care &amp; Residential Landscaping</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Global Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-main">
+      <div class="header-inner">
+        <a href="index.html" class="site-logo" aria-label="GreenScape Home">
+          <svg class="site-logo-icon" viewBox="0 0 32 32">
+            <path d="M6 26C6 14 16 4 28 4C28 16 18 26 6 26Z" fill="#427A46"/>
+            <path d="M6 26C12 20 20 18 28 4" stroke="#D9B76A" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <span>Green</span>Scape
+        </a>
+
+        <nav class="nav-desktop" aria-label="Primary Navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link active">Services</a>
+          <a href="gallery.html" class="nav-link">Gallery</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-cta-wrapper">
+          <a href="contact.html" class="btn btn-primary btn-sm" data-open-quote-modal id="headerQuoteBtn">Get a Free Quote</a>
+          <button class="nav-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false" id="mobileMenuBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" role="dialog" aria-modal="true">
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <a href="index.html" class="site-logo">
+          <svg class="site-logo-icon" viewBox="0 0 32 32">
+            <path d="M6 26C6 14 16 4 28 4C28 16 18 26 6 26Z" fill="#427A46"/>
+            <path d="M6 26C12 20 20 18 28 4" stroke="#D9B76A" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <span>Green</span>Scape
+        </a>
+        <button class="mobile-nav-close" aria-label="Close navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="mobile-nav-footer">
+        <a href="contact.html" class="btn btn-gold" style="width: 100%; margin-bottom: 1rem;" data-open-quote-modal>Get a Free Quote</a>
+        <p style="font-size: 0.8rem; color: var(--color-muted-text); text-align: center;">Serving Lakeland &amp; Nearby Communities</p>
+      </div>
+    </div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-labelledby="servicesHeroTitle">
+      <div class="container">
+        <div class="page-hero-inner">
+          <span class="eyebrow eyebrow-light">COMPREHENSIVE RESIDENTIAL CARE</span>
+          <h1 id="servicesHeroTitle">Our Lawn Care &amp; Landscaping Services</h1>
+          <p>Practical, professional outdoor services designed specifically for Florida turf, ornamental landscapes, and sunny Central Florida properties.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Jump Sub-Navigation -->
+    <div style="background: var(--color-offwhite-card); border-bottom: 1px solid var(--color-border-subtle); padding: 0.85rem 0;">
+      <div class="container" style="display: flex; gap: 1rem; overflow-x: auto; white-space: nowrap; font-size: 0.875rem; font-weight: 600;">
+        <a href="#mowing" style="color: var(--color-primary-forest);">Lawn Mowing</a>
+        <span style="color: var(--color-light-muted);">&bull;</span>
+        <a href="#design" style="color: var(--color-primary-forest);">Landscape Design</a>
+        <span style="color: var(--color-light-muted);">&bull;</span>
+        <a href="#sod" style="color: var(--color-primary-forest);">Sod Installation</a>
+        <span style="color: var(--color-light-muted);">&bull;</span>
+        <a href="#cleanup" style="color: var(--color-primary-forest);">Yard Cleanup</a>
+        <span style="color: var(--color-light-muted);">&bull;</span>
+        <a href="#hedges" style="color: var(--color-primary-forest);">Hedge Trimming</a>
+        <span style="color: var(--color-light-muted);">&bull;</span>
+        <a href="#property" style="color: var(--color-primary-forest);">Property Maintenance</a>
+      </div>
+    </div>
+
+    <!-- Service 1: Lawn Mowing & Maintenance -->
+    <section class="section" id="mowing" aria-labelledby="mowingTitle">
+      <div class="container">
+        <div class="grid-split">
+          <div class="service-detail-copy">
+            <span class="eyebrow">ROUTINE UPKEEP</span>
+            <h2 id="mowingTitle">Lawn Mowing &amp; Maintenance</h2>
+            <p>Regular mowing, precision line trimming, vertical driveway edging, and hardscape blowing tailored to keep Florida turf healthy, dense, and neatly manicured.</p>
+            <p>We tailor our cutting schedules to Florida's growth seasons—weekly through summer's heat and rain, and bi-weekly during cooler winter months—ensuring your turf remains green without scalping or weed stress.</p>
+            <ul class="value-points-list">
+              <li class="value-point-item">
+                <svg class="value-point-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <div class="value-point-text">
+                  <strong>Precise Vertical Edging</strong>
+                  <span>Razor-sharp separation between lawn, concrete walkways, driveways, and curbs.</span>
+                </div>
+              </li>
+              <li class="value-point-item">
+                <svg class="value-point-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <div class="value-point-text">
+                  <strong>Clean Hardscape Blowing</strong>
+                  <span>Driveways, walkways, patios, and pool decks blown clear of grass clippings every time.</span>
+                </div>
+              </li>
+            </ul>
+            <div style="margin-top: 1.75rem;">
+              <a href="contact.html" class="btn btn-primary" data-open-quote-modal>Get a Mowing Quote</a>
+            </div>
+          </div>
+
+          <div class="photo-frame">
+            <img src="assets/images/service-mowing.jpg" alt="Lawn mowing diagonal stripes in Florida yard" loading="lazy">
+            <div class="photo-frame-caption">
+              <span>Sharp blades and proper cutting heights for St. Augustine &amp; Zoysia lawns</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service 2: Landscape Design & Installation -->
+    <section class="section bg-offwhite" id="design" aria-labelledby="designTitle">
+      <div class="container">
+        <div class="grid-split reverse">
+          <div class="service-detail-copy">
+            <span class="eyebrow">CURB APPEAL &amp; ARCHITECTURE</span>
+            <h2 id="designTitle">Landscape Design &amp; Installation</h2>
+            <p>Thoughtful landscape improvements suited to Florida homes. Whether refreshing overgrown flower beds, planting sun-tolerant tropical species, or building durable natural stone borders, we build landscapes that thrive.</p>
+            <p>We select Florida-friendly ornamental grasses, vibrant crotons, bougainvillea, and palms that resist drought, handle intense afternoon sun, and stay colorful year-round.</p>
+            <ul class="value-points-list">
+              <li class="value-point-item">
+                <svg class="value-point-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <div class="value-point-text">
+                  <strong>Florida-Hardy Plant Selection</strong>
+                  <span>Low-maintenance tropical and subtropical plants adapted to Central Florida heat.</span>
+                </div>
+              </li>
+              <li class="value-point-item">
+                <svg class="value-point-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <div class="value-point-text">
+                  <strong>Bed Edging &amp; Organic Mulch</strong>
+                  <span>Fresh dark mulch or pine straw installation with stone or spade border trenching.</span>
+                </div>
+              </li>
+            </ul>
+            <div style="margin-top: 1.75rem;">
+              <a href="contact.html" class="btn btn-primary" data-open-quote-modal>Request Landscape Consultation</a>
+            </div>
+          </div>
+
+          <div class="photo-frame">
+            <img src="assets/images/service-design.jpg" alt="Modern Florida front yard landscaping design with tropical plants" loading="lazy">
+            <div class="photo-frame-caption">
+              <span>Cohesive front yard transformations tailored to Lakeland home architecture</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service 3: Sod Installation -->
+    <section class="section" id="sod" aria-labelledby="sodTitle">
+      <div class="container">
+        <div class="grid-split">
+          <div class="service-detail-copy">
+            <span class="eyebrow">TURF RESTORATION</span>
+            <h2 id="sodTitle">Sod Installation</h2>
+            <p>Refresh worn-out, weed-infested, or damaged lawns with professionally installed sod. A fresh turf installation instantly revives your property's value and provides a lush, thick carpet of green grass.</p>
+            <p>We manage the entire process properly: clearing out dying grass, grading soil for proper drainage, and tightly seaming premium farm-fresh sod rolls for rapid root establishment.</p>
+            <ul class="value-points-list">
+              <li class="value-point-item">
+                <svg class="value-point-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <div class="value-point-text">
+                  <strong>Substrate Preparation &amp; Grading</strong>
+                  <span>Old lawn removal and careful leveling so water flows naturally away from foundations.</span>
+                </div>
+              </li>
+              <li class="value-point-item">
+                <svg class="value-point-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <div class="value-point-text">
+                  <strong>Florida Sod Varieties</strong>
+                  <span>Options include St. Augustine (Floratam / Seville), Empire Zoysia, and Bahia.</span>
+                </div>
+              </li>
+            </ul>
+            <div style="margin-top: 1.75rem;">
+              <a href="contact.html" class="btn btn-primary" data-open-quote-modal>Request Sod Estimate</a>
+            </div>
+          </div>
+
+          <div class="photo-frame">
+            <img src="assets/images/service-sod.jpg" alt="Sod installation in progress on Florida yard" loading="lazy">
+            <div class="photo-frame-caption">
+              <span>Farm-fresh sod laid with tight joints for smooth, seamless turf growth</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service 4: Yard Cleanup & Property Care -->
+    <section class="section bg-offwhite" id="cleanup" aria-labelledby="cleanupTitle">
+      <div class="container">
+        <div class="grid-split reverse">
+          <div class="service-detail-copy">
+            <span class="eyebrow">RESET &amp; RESTORATION</span>
+            <h2 id="cleanupTitle">Yard Cleanup &amp; Property Care</h2>
+            <p>Seasonal cleanups, overgrown brush clearing, dead foliage trimming, and general outdoor maintenance to bring tired properties back into pristine order.</p>
+            <p>Ideal after intense summer storm cycles, seasonal transitions, or when moving into a home that needs yard rehabilitation before routine mowing begins.</p>
+            <ul class="value-points-list">
+              <li class="value-point-item">
+                <svg class="value-point-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <div class="value-point-text">
+                  <strong>Debris &amp; Leaf Removal</strong>
+                  <span>Raking out buried leaves, pine needles, fallen palm fronds, and garden waste.</span>
+                </div>
+              </li>
+              <li class="value-point-item">
+                <svg class="value-point-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <div class="value-point-text">
+                  <strong>Overgrowth Pruning</strong>
+                  <span>Taming overgrown shrubs, vine intrusion along fences, and neglected fence lines.</span>
+                </div>
+              </li>
+            </ul>
+            <div style="margin-top: 1.75rem;">
+              <a href="contact.html" class="btn btn-primary" data-open-quote-modal>Request Yard Cleanup Quote</a>
+            </div>
+          </div>
+
+          <div class="photo-frame">
+            <img src="assets/images/service-cleanup.jpg" alt="Spotless clean backyard patio and grass after cleanup" loading="lazy">
+            <div class="photo-frame-caption">
+              <span>Complete property cleanups that restore neatness and curb appeal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service 5: Hedge & Shrub Trimming -->
+    <section class="section" id="hedges" aria-labelledby="hedgesTitle">
+      <div class="container">
+        <div class="grid-split">
+          <div class="service-detail-copy">
+            <span class="eyebrow">PRECISION SHAPING</span>
+            <h2 id="hedgesTitle">Hedge &amp; Shrub Trimming</h2>
+            <p>Ornamental shaping, privacy hedge pruning, and maintenance trimming to keep bushes healthy, tidy, and free of tangled overgrowth.</p>
+            <p>Proper pruning prevents shrubs from crowding walkways, touching house walls, or shading out underlying turfgrass.</p>
+            <ul class="value-points-list">
+              <li class="value-point-item">
+                <svg class="value-point-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <div class="value-point-text">
+                  <strong>Formal Lines &amp; Natural Pruning</strong>
+                  <span>From crisp formal hedge boxes to graceful natural contour shaping.</span>
+                </div>
+              </li>
+              <li class="value-point-item">
+                <svg class="value-point-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <div class="value-point-text">
+                  <strong>Walkway &amp; Wall Clearance</strong>
+                  <span>Ensuring air circulation around siding and clear passage on sidewalks.</span>
+                </div>
+              </li>
+            </ul>
+            <div style="margin-top: 1.75rem;">
+              <a href="contact.html" class="btn btn-primary" data-open-quote-modal>Request Trimming Quote</a>
+            </div>
+          </div>
+
+          <div class="photo-frame">
+            <img src="assets/images/service-hedges.jpg" alt="Crisp formal hedge trimming along residential fence" loading="lazy">
+            <div class="photo-frame-caption">
+              <span>Even lines, proper plant density, and full cleanup of all trimmings</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service 6: General Property Maintenance -->
+    <section class="section bg-offwhite" id="property" aria-labelledby="propertyTitle">
+      <div class="container">
+        <div class="grid-split reverse">
+          <div class="service-detail-copy">
+            <span class="eyebrow">TOTAL CARE</span>
+            <h2 id="propertyTitle">General Property Maintenance</h2>
+            <p>Comprehensive scheduled outdoor care for busy homeowners who want their entire exterior perimeter kept in top shape without managing multiple contractors.</p>
+            <p>Combines routine lawn cutting with seasonal flower bed weed pulling, mulch top-offs, minor branch clearances, and storm season perimeter checks.</p>
+            <ul class="value-points-list">
+              <li class="value-point-item">
+                <svg class="value-point-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <div class="value-point-text">
+                  <strong>Scheduled Year-Round Visits</strong>
+                  <span>Reliable seasonal schedule adapted to summer surge and winter dormancy.</span>
+                </div>
+              </li>
+              <li class="value-point-item">
+                <svg class="value-point-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <div class="value-point-text">
+                  <strong>Full Exterior Neatness</strong>
+                  <span>Consistent attention that protects property value and HOA compliance.</span>
+                </div>
+              </li>
+            </ul>
+            <div style="margin-top: 1.75rem;">
+              <a href="contact.html" class="btn btn-primary" data-open-quote-modal>Request Maintenance Plan</a>
+            </div>
+          </div>
+
+          <div class="photo-frame">
+            <img src="assets/images/gallery-curb.jpg" alt="Pristine suburban curb appeal property in Florida" loading="lazy">
+            <div class="photo-frame-caption">
+              <span>Proactive property upkeep so your yard is always ready to enjoy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Comparison Matrix -->
+    <section class="section" aria-labelledby="matrixTitle">
+      <div class="container">
+        <div class="center-content">
+          <span class="eyebrow">TRANSPARENT SERVICE INCLUSIONS</span>
+          <h2 id="matrixTitle">Service Features At A Glance</h2>
+          <p class="lede text-center">Compare what is included in our regular mowing visits versus our specialized landscape improvement projects.</p>
+        </div>
+
+        <div style="overflow-x: auto;">
+          <table class="service-matrix-table">
+            <thead>
+              <tr>
+                <th>Care Feature / Service Detail</th>
+                <th>Routine Mowing &amp; Edge</th>
+                <th>Seasonal Yard Cleanup</th>
+                <th>Landscape &amp; Sod Projects</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Lawn Mowing &amp; Trimming</strong></td>
+                <td><span class="check-icon-yes">&#10003; Every Visit</span></td>
+                <td><span class="check-icon-yes">&#10003; Included</span></td>
+                <td><span>Optional Add-on</span></td>
+              </tr>
+              <tr>
+                <td><strong>Vertical Driveway &amp; Sidewalk Edging</strong></td>
+                <td><span class="check-icon-yes">&#10003; Every Visit</span></td>
+                <td><span class="check-icon-yes">&#10003; Included</span></td>
+                <td><span class="check-icon-yes">&#10003; Final Polish</span></td>
+              </tr>
+              <tr>
+                <td><strong>Blowing Off Concrete &amp; Patios</strong></td>
+                <td><span class="check-icon-yes">&#10003; Included</span></td>
+                <td><span class="check-icon-yes">&#10003; Full Clean</span></td>
+                <td><span class="check-icon-yes">&#10003; Spotless Handover</span></td>
+              </tr>
+              <tr>
+                <td><strong>Shrub &amp; Hedge Pruning</strong></td>
+                <td><span>Optional Schedule</span></td>
+                <td><span class="check-icon-yes">&#10003; Overgrowth Pruning</span></td>
+                <td><span class="check-icon-yes">&#10003; Structural Shaping</span></td>
+              </tr>
+              <tr>
+                <td><strong>Flower Bed Weed Pulling</strong></td>
+                <td><span>Routine Touch-up</span></td>
+                <td><span class="check-icon-yes">&#10003; Complete Clearing</span></td>
+                <td><span class="check-icon-yes">&#10003; Weed Barrier / Mulch</span></td>
+              </tr>
+              <tr>
+                <td><strong>Soil Grading &amp; Fresh Sod Laying</strong></td>
+                <td><span>&ndash;</span></td>
+                <td><span>&ndash;</span></td>
+                <td><span class="check-icon-yes">&#10003; Full Service</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA Banner -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="cta-banner">
+          <span class="eyebrow eyebrow-light">READY TO GET STARTED?</span>
+          <h2>Let's Discuss Your Yard's Specific Needs.</h2>
+          <p>Get a fast, clear estimate for your lawn or landscaping project in Lakeland and surrounding communities.</p>
+          <div class="cta-banner-actions">
+            <a href="contact.html" class="btn btn-gold btn-lg" data-open-quote-modal>Request a Free Quote</a>
+            <a href="contact.html" class="btn btn-white-outline btn-lg">Contact Our Team</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="demo-disclosure-box">
+        <div class="demo-disclosure-text">
+          <strong>Website Portfolio Demonstration:</strong> Concept website designed by digital agency AppVanta for presentation purposes. Fictional business identity for demonstration.
+        </div>
+        <div class="agency-badge">
+          Designed by AppVanta
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo">
+            <svg class="site-logo-icon" viewBox="0 0 32 32">
+              <path d="M6 26C6 14 16 4 28 4C28 16 18 26 6 26Z" fill="#427A46"/>
+              <path d="M6 26C12 20 20 18 28 4" stroke="#D9B76A" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+            <span>Green</span>Scape
+          </a>
+          <p style="font-weight: 600; color: var(--color-gold-accent); margin-bottom: 0.5rem;">"Beautiful Lawns. Reliable Care."</p>
+          <p>Professional lawn care and landscaping services designed to keep Florida properties looking beautiful throughout the year.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="contact.html">Contact &amp; Quote</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#mowing">Lawn Mowing</a></li>
+            <li><a href="services.html#design">Landscape Design</a></li>
+            <li><a href="services.html#sod">Sod Installation</a></li>
+            <li><a href="services.html#cleanup">Yard Cleanup</a></li>
+            <li><a href="services.html#hedges">Hedge Trimming</a></li>
+            <li><a href="services.html#property">Property Upkeep</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Service Location</h4>
+          <div class="footer-location-info">
+            <div class="footer-location-item">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span>Lakeland, Florida &amp; nearby Polk County communities</span>
+            </div>
+            <div class="footer-location-item">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              <span>Monday &ndash; Friday: 7:30 AM &ndash; 6:00 PM</span>
+            </div>
+          </div>
+          <div style="margin-top: 1.5rem;">
+            <a href="contact.html" class="btn btn-gold btn-sm" data-open-quote-modal>Get a Free Quote</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 GreenScape Lawn &amp; Landscape. All rights reserved.
+        </div>
+        <div>
+          <span>Concept website designed for demonstration purposes.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Global Quick Quote Modal -->
+  <div class="quote-modal" id="quickQuoteModal" role="dialog" aria-modal="true">
+    <div class="quote-modal-content">
+      <button class="quote-modal-close" aria-label="Close quote modal">&times;</button>
+      <div id="modalSuccessBox" class="form-success-box">
+        <div class="success-check-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+        </div>
+        <h3 style="color: var(--color-primary-forest); margin-bottom: 0.5rem;">Estimate Request Received!</h3>
+        <p style="color: var(--color-muted-text); margin-bottom: 1rem;">
+          Thank you, <strong class="success-name">Neighbor</strong>. Your quote request has been generated for demonstration review.
+        </p>
+        <button type="button" class="btn btn-secondary btn-reset-form">Send Another Request</button>
+      </div>
+
+      <form id="modalQuoteForm">
+        <span class="eyebrow">FAST &amp; CONVENIENT</span>
+        <h3 style="margin-bottom: 0.5rem;">Request a Free Quote</h3>
+        <p style="font-size: 0.9rem; margin-bottom: 1.5rem;">Tell us about your property in Lakeland or nearby areas for a fast, clear estimate.</p>
+
+        <div class="form-group">
+          <label class="form-label" for="modalFullName">Full Name <span class="req">*</span></label>
+          <input type="text" id="modalFullName" name="fullName" class="form-input" placeholder="e.g. David Thompson" required>
+          <div class="form-error-msg error-name">Please provide your full name.</div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="modalEmail">Email Address <span class="req">*</span></label>
+            <input type="email" id="modalEmail" name="email" class="form-input" placeholder="name@example.com" required>
+            <div class="form-error-msg error-email">Please enter a valid email address.</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="modalZip">Property ZIP Code <span class="req">*</span></label>
+            <input type="text" id="modalZip" name="zipCode" class="form-input" placeholder="e.g. 33801" maxlength="5" required>
+            <div class="form-error-msg error-zip">Please enter a 5-digit ZIP code.</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalService">Primary Service Needed <span class="req">*</span></label>
+          <select id="modalService" name="serviceNeeded" class="form-select" required>
+            <option value="">Select a service...</option>
+            <option value="Lawn Maintenance">Lawn Maintenance (Mowing &amp; Edging)</option>
+            <option value="Landscaping">Landscaping Design &amp; Installation</option>
+            <option value="Sod Installation">Sod Installation / Turf Refresh</option>
+            <option value="Yard Cleanup">Yard Cleanup &amp; Brush Removal</option>
+            <option value="Other">Other Yard Care Services</option>
+          </select>
+          <div class="form-error-msg error-service">Please select a service.</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Quote Request</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
