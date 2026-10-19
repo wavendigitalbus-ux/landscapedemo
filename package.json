@@ -1,0 +1,10 @@
+{
+  "name": "greenscape-lawn-landscape",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GreenScape Lawn & Landscape residential website",
+  "scripts": {
+    "dev": "npx -y serve . -l 3000",
+    "start": "npx -y serve . -l 3000"
+  }
+}
