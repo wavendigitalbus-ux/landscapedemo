@@ -70,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const category = item.getAttribute('data-category');
           if (filterValue === 'all' || category === filterValue) {
             item.classList.remove('hidden');
+            item.classList.add('is-visible');
           } else {
             item.classList.add('hidden');
           }
@@ -113,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     lightboxModal.addEventListener('click', (e) => {
-      if (e.target === lightboxModal || e.target.classList.contains('lightbox-container-wrap')) {
+      if (e.target === lightboxModal || !e.target.closest('.lightbox-container')) {
         closeLightbox();
       }
     });
@@ -255,4 +256,36 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   });
+
+  // --- 8. Scroll Reveal Animations (Intersection Observer) ---
+  const fadeElements = document.querySelectorAll('.fade-in');
+  if (fadeElements.length > 0) {
+    if ('IntersectionObserver' in window) {
+      document.documentElement.classList.add('js-reveal');
+
+      const appearObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.08,
+        rootMargin: '0px 0px -30px 0px'
+      });
+
+      fadeElements.forEach(el => {
+        // If element is already in or above viewport, show immediately
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+          el.classList.add('is-visible');
+        } else {
+          appearObserver.observe(el);
+        }
+      });
+    } else {
+      fadeElements.forEach(el => el.classList.add('is-visible'));
+    }
+  }
 });
